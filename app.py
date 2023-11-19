@@ -1,13 +1,10 @@
 import streamlit as st
 import pickle
-import subprocess
-subprocess.run(["pip", "install", "nltk"])
 import nltk
-from nltk.corpus import stopwords
-from nltk.tokenize import word_tokenize
-
 nltk.download('stopwords')
 nltk.download('punkt')
+from nltk.corpus import stopwords
+from nltk.tokenize import word_tokenize
 
 # Load the trained model and vectorizer
 with open('drug_prediction_model_nlp_sampled.pkl', 'rb') as model_file:
