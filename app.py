@@ -32,7 +32,7 @@ def predict_drugs(diagnosis):
 # Streamlit UI
 
 
-image = Image.open('drug.webp')
+image = Image.open('drug.jpg')
 st.image(image, caption='A Picture of Random Drugs')
 
 st.title("Drug Prediction App")
