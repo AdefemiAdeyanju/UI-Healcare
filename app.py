@@ -3,6 +3,7 @@ import pickle
 import nltk
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
+from PIL import Image
 
 nltk.download('stopwords')
 nltk.download('punkt')
@@ -29,6 +30,11 @@ def predict_drugs(diagnosis):
     return prediction
 
 # Streamlit UI
+
+
+image = Image.open('drug.webp')
+st.image(image, caption='A Picture of Random Drugs')
+
 st.title("Drug Prediction App")
 
 # Input box for user to enter diagnosis
