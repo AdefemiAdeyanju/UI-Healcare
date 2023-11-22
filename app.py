@@ -1,8 +1,8 @@
 import streamlit as st
 import pickle
 import nltk
-nltk.download('stopwords')
-nltk.download('punkt')
+#nltk.download('stopwords')
+#nltk.download('punkt')
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 
@@ -38,3 +38,6 @@ if st.button("Predict"):
     # Make prediction
     result = predict_drugs(user_input)
     st.success(f"Predicted Drugs: {result}")
+
+st.write('---')  
+st.write('Please Note: The following app is not an alternative to drug prescriptions. Do meet an authorised medical personnel for that!')
